@@ -70,21 +70,47 @@ html {
     width: 150px;
     font-size: 15px;
 }
-.backgroundLayer {
+
+.modal-window {
     display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+}
+
+.backgroundLayer {
+    visibility: hidden;
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .prediction {
+    z-index: 3;
     height: 50%;
     width: 50%;
+    background-color: white;
     visibility: hidden;
 }
 
+.close {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.close-span {
+    width: 10px;
+    height: 5px;
+    color: rebeccapurple;
+}
+
 .open {
-    display: block;
+    display: flex;
     visibility: visible;
 }
 
